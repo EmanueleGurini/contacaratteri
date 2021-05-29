@@ -11,9 +11,9 @@ interface IState {
 function App(props: IState) {
 
   const { text, textAction } = props;
-  const [allLetters, setAllLetters] = useState('');
-  const [allLettersWithoutSpaces, setAllLettersWithoutSpaces] = useState('');
-  const [allWords, setAllWords] = useState('');
+  const [allLetters, setAllLetters] = useState(0);
+  const [allLettersWithoutSpaces, setAllLettersWithoutSpaces] = useState(0);
+  const [allWords, setAllWords] = useState(0);
 
   const setArrayWithAllLetters = (value : any) : void => {
     let arrayWithAllLetters = value.split("");
