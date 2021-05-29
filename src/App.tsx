@@ -45,7 +45,7 @@ function App(props: IState) {
       <input onChange={handleChange} />
       <p>{ `All letters ${allLetters}` }</p>
       <p>{ `All letters without spaces ${allLettersWithoutSpaces}` }</p>
-      <p>{ `All Words ${allWords}` }</p>
+      <p>{ allLetters === 0 ? `All Words 0` : `All Words ${allWords}` }</p>
     </div>
   );
 }
